@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @parser.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @parser.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_parser_path(@parser) %> |
+<%= link_to 'Back', parsers_path %>

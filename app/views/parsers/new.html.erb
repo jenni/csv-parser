@@ -1,0 +1,10 @@
+<h1>New Parser</h1>
+<!-- setup a route so that Rails can pass the request from your form into your controller -->
+<%= form_tag('/parsers/upload') do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag %>
+<% end %>
+
+<%#= render 'form', parser: @parser %>
+
+<%= link_to 'Back', parsers_path %>
